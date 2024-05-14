@@ -27,7 +27,7 @@ private:
 
 void MainMenu::run() {
 
-     if (!backgroundTexture.loadFromFile("menu2.jpeg") ||
+     if (!backgroundTexture.loadFromFile("logo.jpg") ||
         !pacmanTextureUp.loadFromFile("welp.jpeg")) {
         std::cerr << "Failed to load texture" << std::endl;
         return;
@@ -68,7 +68,7 @@ void MainMenu::displayMenu() {
 
 
     sf::Font font;
-    if (!font.loadFromFile("emulogic.ttf")) {
+    if (!font.loadFromFile("font.ttf")) {
         std::cerr << "Failed to load font" << std::endl;
         return;
     }
